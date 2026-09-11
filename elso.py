@@ -9,6 +9,7 @@ változó típusok
 str(5) -> "5"
 
 """
+"""
 knev = "Mihály"
 egesz = 3
 tort = 3.14
@@ -56,6 +57,38 @@ elif szam == 0:
     print(f"a szam a nulla.")
 else :
     print(f"a {szam} kisebb mint 0.")
+"""
+#gép gondoljon egy számra (1-9) között és találjuk ki.
+import random 
+rng = random.randint(1,9)
+db = 0
+# while True :
+#     tipp = int(input("kérem a tipped: "))
+#     db += 1
+#     if rng != tipp:
+#         print("helytelen!")
+#         # if rng < tipp :
+#         #     print("kisebbre gondoltam")
+#         # else :
+#         #     print("nagyobbra gondoltam" )
+#         print(f"{"Kisebbre" if rng < tipp  else "Nagyobbra"} gondoltam")
+
+#     else:
+#         print("a szám helyes!")
+#         print(f"{db} lépésben találtad ki")
+#         break 
+# tipp = None 
+# while tipp != rng :
+#     tipp = int(input("kérem a tipped: "))
+#     db += 1
+#     if rng != tipp:
+#         print(f"{"Kisebbre" if rng < tipp  else "Nagyobbra"} gondoltam")
+    
+# print("a szám helyes!")
+# print(f"{db} lépésben találtad ki")
+ 
+
+
 
 """
 szam=int(input("Kérek egy számot: "))
