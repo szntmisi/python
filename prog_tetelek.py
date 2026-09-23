@@ -53,49 +53,91 @@ szamok = [5, 6, 7]
 #         paros_osszeg += szam
 
 # print(f"páros számok átlaga: {paros_osszeg / paros_db:.2f}.")--------------------------------------------
-#eldöntés
+#eldöntés------------------------------------------------------------------ELDONTES------------------------------------------------------------------
 # lehetséges válaaszok:van,nincs,mind ilyen,egy ilyen sincs 
 #visszatérési érték az egy logikai érték
 #pl: van e páros szám a listában?,a listában minden szám páros?...
 #kérdés be kell a járni a listát?
 #van e páros szám a listában?
-szamok = [ 4,5, 7, 9,]
+# szamok = [ 4,5, 7, 9,]
 
-i = 0
-while i < len(szamok) and not(szamok[i] %2 == 0):
-    i += 1
-van = i < len(szamok)
-print(f"{'van'if van else  'nincs'} páros szám a listában")
+# i = 0
+# while i < len(szamok) and not(szamok[i] %2 == 0):
+#     i += 1
+# van = i < len(szamok)
+# print(f"{'van'if van else  'nincs'} páros szám a listában")
 
 #minden szám páratlan e?
-szamok = [5, 4, 7, 9,]
+# szamok = [5, 4, 7, 9,]
 
-i = 0
-while i < len(szamok) and not(szamok[i] %2 == 0):
-    i += 1
+# i = 0
+# while i < len(szamok) and not(szamok[i] %2 == 0):
+#     i += 1
 
-van = i < len(szamok)
-print(f"{'Nem minden'if van else 'Minden'} szám páratlan")
+# van = i < len(szamok)
+# print(f"{'Nem minden'if van else 'Minden'} szám páratlan")
 
 #eldöntés  V2
 #van e páros szám a listában
-van = False 
+# van = False 
 
-for szam in szamok:
-    if szam %2 == 0:
-        van = True
-        break
+# for szam in szamok:
+#     if szam %2 == 0:
+#         van = True
+#         break
 
-print(f"{'van'if van else  'nincs'} páros szám a listában")
+# print(f"{'van'if van else  'nincs'} páros szám a listában")
 
-#kiválasztás tétele
+#kiválasztás tétele-----------------------------------------------------KIVALASZTAS-----------------------------------
 #ha biztosan tudjuk hogy van olyan elem akkor adjuk meg a sorszámot
 #vissza térési érték: egy sorszám,ami a addot tulajdonsága elem a listában
 #példa: hanyadik ember a legmagasabba listában
 # hanyadik elem az első páros szám 
-szamok = [4, 7, 5, 9,]
-i = 0
-while not (szamok[i] %2 == 0):
-    i += 1
+szamok = [7, 3, 5, ]
+# i = 0
+# while not (szamok[i] %2 == 0):
+#     i += 1
 
-print(f"az első páros elem indexe a(z):{i},értéke {szamok[i]}")
+# sorszam = i
+# print(f"az első páros elem indexe a(z):{sorszam},értéke {szamok[sorszam]}")
+
+#keresés tétele-----------------------------------------------------------------KERESES--------------------------
+#megadja hogy létezik e az adott tulajdonságú eleme és ha igen akkor hanyadik indexen van
+#pl: keresd meg az első páros sz
+sorszam = -1
+i = 0
+while i < len(szamok) and not (szamok[i] %2 == 0):
+    i += 1
+van = i < len(szamok)
+if van:
+    sorszam = i 
+if van:
+    print(f"Van páros szám. indexe:{sorszam} értéke: {szamok[sorszam]}")
+else:
+    print("Nincs benne páros szám")
+#keresd meg az átlag fölötti számot
+#1.átlagolás
+#2.keresés
+
+osszeg = 0
+for szam in szamok:
+    osszeg += szam
+
+db = 0
+for szam in szamok:
+    db += 1
+
+atlag = osszeg/db
+
+# atlag = sum(szamok)/len(szamok)
+sorszam = -1
+i = 0
+while i < len(szamok) and not (szamok[i] > atlag):
+    i += 1
+van = i < len(szamok)
+if van:
+    sorszam = 1
+if van:
+    print(f"Van a listában átlag fölötti szám. indexe : {sorszam} értéke {szamok[sorszam]}")
+else:
+    print("Nincs.XD?")
