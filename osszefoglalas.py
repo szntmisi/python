@@ -8,3 +8,6 @@
 #eldüntés tétel(while vagy for {van})
 #7. kiválasztés tétel
 #8.keresés tétel()
+#9 szélsőérték kiválasztása
+#10 rendezés
+#11 kiválogatás
