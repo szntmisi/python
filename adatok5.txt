@@ -1,0 +1,6 @@
+nev;tantargy;jegy
+Nagy Tibor;matematika;3
+Sajtos Geza;matematika;4
+Kis Gizella;matematika;4
+Toth Tamas;tortenelem;2
+Padra Zsolt;enek;5
