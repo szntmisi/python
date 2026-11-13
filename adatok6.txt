@@ -4,3 +4,8 @@ Sajtos Geza;matematika;4
 Kis Gizella;matematika;4
 Toth Tamas;tortenelem;2
 Padra Zsolt;enek;5
+Nagy Tibor;matematika;2
+Sajtos Geza;matematika;5
+Kis Gizella;matematika;1
+Toth Tamas;tortenelem;4
+Padra Zsolt;enek;3
